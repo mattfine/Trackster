@@ -1,4 +1,5 @@
 var Trackster = {};
+const API_KEY = "f7d0b24a8a434c2cca833ffd681f63cb";
 
 $(document).ready(function() {
   $("#search-button").click(function() {
@@ -18,5 +19,8 @@ Trackster.renderTracks = function(tracks) {
   Render the tracks given in the API query response.
 */
 Trackster.searchTracksByTitle = function(title) {
-
+  $.ajax({
+    url: "http://ws.audioscrobbler.com/2.0/?method=track.search&track=" + title + "&api_key=" + API_KEY + "&format=json",
+    success: console.log("Success!")
+  })
 };

@@ -27,11 +27,39 @@ input {
   height: 2.5rem;
 }
 
-i {
+.brand-search i {
   background-color: rgb(255, 102, 204);
   color: rgb(35, 2, 63);
   padding: 0.5rem;
   border-radius: 1rem;
   text-align: center;
   margin-left: 0.5rem;
+}
+
+.brand-search i:hover {
+  background-color: rgb(255, 0, 171);
+}
+
+.header-data {
+  background-color: rgb(104, 0, 255);
+  color: rgb(255, 255, 255);
+}
+
+span {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+#results {
+  background-color: rgb(204, 204, 204);
+}
+
+#results:hover {
+  background-color: rgb(239, 237, 242);
+}
+
+#results i {
+  color: rgb(255, 0, 171);
+  padding: 0.5rem 0;
 }
